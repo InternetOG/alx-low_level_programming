@@ -5,6 +5,7 @@
  * main -Checks for positive or negative number
  *
  * Return: returns 0
+ */
 int main(void)
 {
 	int n;
