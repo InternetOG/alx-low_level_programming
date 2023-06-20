@@ -1,20 +1,19 @@
 #include "main.h"
 
 /**
- * main - main function
+ *  print_alphabet - main function
  *
  * Return: returns 0
  *
  */
 
-int main(void)
+void print_alphabet(void)
 {
-	int i;
+	char i;
 
 	for (i = 'a'; i <= 'z'; i++)
 	{
-		_putchar(print_alphabet(i));
+		_putchar(i);
 	}
 	_putchar('\n');
-	return (0);
 }
