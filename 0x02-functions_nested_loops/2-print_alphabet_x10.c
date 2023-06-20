@@ -3,7 +3,7 @@
 /**
  * print_alphabet_x10 - print a-z 10 times
  *
- * Return: return 0
+ * Return: return nothing
  */
 
 void print_alphabet_x10(void)
@@ -19,5 +19,4 @@ void print_alphabet_x10(void)
 		}
 	}
 	_putchar('\n');
-	return (0);
 }
