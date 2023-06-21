@@ -1,13 +1,13 @@
 #include "main.h"
+
 /**
- * print_last_digit - prints the last number
- *
- * @num: integer variable
- *
- * Return: last_digit
+ *print_last_digit - prints the last digit
+ *@q: type integer
+ *Return: The value of the last digit
  */
 
-int print_last_digit(int num)
+
+int print_last_digit(int q)
 {
 	int last_digit;
 
