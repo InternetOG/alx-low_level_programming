@@ -14,7 +14,5 @@ int add(int a, int b)
 {
 	 a = 89;
 	 b = 8;
-	int n = a + b;
-
-	return (n);
+	 return (a + b);
 }
