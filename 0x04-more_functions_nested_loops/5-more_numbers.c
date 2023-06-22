@@ -1,17 +1,28 @@
-#include <stdio.h>
-#include <unistd.h>
+#include "main.h"
 
-int _putchar(char c);
+/**
+ * more_numbers - 10X14 matrix
+ *
+ * @void: no parameter
+ *
+ * Return: always 0
+ */
 
-int main() {
-    for (int i = 10; i <= 15; i++) {
-        _putchar((i / 10) + '0'); // Print the tens digit
-        _putchar((i % 10) + '0'); // Print the ones digit
-        _putchar('\n');
-    }
-    return 0;
-}
+void more_numbers(void)
+{
+	int i, j;
 
-int _putchar(char c) {
-    return write(1, &c, 1);
+	for (i = 0; i < 10; i++)
+	{
+		for (int j = 0; j <= 14; i++)
+		{
+			if (j > 9)
+			{
+				_putchar((j / 10) + '0');
+				_putchar((j % 10) + '0');
+			}
+			_putchar((j % 10) + '0');
+		}
+		_putchar('\n');
+	}
 }
