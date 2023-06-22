@@ -2,24 +2,22 @@
 #include <unistd.h>
 
 int _putchar(char c);
-void print_line(int n);
+void print_square(int size);
 
 int main(){
-	print_line(0);	
+	print_square(10);
 }
 
-int _putchar(char c)
-{
-	return (write(1, &c, 1));
+void print_square(int size){
+    for (int i = 0; i < size; i++) {
+	    for (int j = 0; j < size; j++){
+       		_putchar('#');
+    		}
+	    _putchar('\n');
+	   }
+
 }
 
-void print_line(int n){
-	for(int i = 0; i < n; i++){
-		_putchar(' ');
-		if(i == n){
-			_putchar('\\');
-			break;
-		}
-	}
-	_putchar('\n');
+int _putchar(char c) {
+    return write(1, &c, 1);
 }
