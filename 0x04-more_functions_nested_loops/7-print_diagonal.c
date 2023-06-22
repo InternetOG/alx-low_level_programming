@@ -12,13 +12,7 @@ void print_line(int n){
 
 	for (int i = 0; i < n; i++)
 	{
-                _putchar(' ');
-
-                if (i == n)
-		{
-			_putchar('\\');
-			break;
-		}
+                _putchar('\\');
         }
         _putchar('\n');
 }
