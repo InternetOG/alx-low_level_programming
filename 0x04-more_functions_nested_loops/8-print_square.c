@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * print_sqaure - displays sqaures of an input
+ * print_square - displays sqaures of an input
  *
  * @size: parameter or arguement
  *
