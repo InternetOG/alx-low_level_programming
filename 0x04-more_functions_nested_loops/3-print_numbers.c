@@ -3,12 +3,10 @@
 /**
  * print_numbers - print from 0 - 9
  *
- * @void: no arguement
- *
  * Return: always 0
  */
 
-voaoid print_numbers(void)
+void print_numbers(void)
 {
 	int i = 0;
 
