@@ -24,6 +24,10 @@ int main(void)
 		{
 			printf("Buzz");
 		}
-		printf("%i\n", num);
+		else
+		{
+			printf("%i ", num );
+		}
 	}
+	printf("\n");
 }
