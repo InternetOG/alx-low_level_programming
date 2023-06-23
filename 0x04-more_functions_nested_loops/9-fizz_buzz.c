@@ -1,38 +1,38 @@
-#include <stdio.h>
-
+#include "stdio.h"
 /**
- * main - FizzBuzz Interview Question
- *
- * Return: always 0
+ * main - making sense
+ * Return: 0
  */
-
 int main(void)
 {
-	int num;
+int i;
 
-	for (num = 1; num <= 100; num++)
-	{
-		if ((num % 3 == 0) && (num % 5 == 0))
-		{
-			printf("FizzBuzz ");
-		}
-		else if (num % 3 == 0)
-		{
-			printf("Fizz ");
-		}
-		else if ((num % 5 == 0)
-		{
-			printf("Buzz ");
-		}
-		else
-		{
-			printf("%i ", num);
-		}
-		if (num != 100)
-		{
-			printf(" ");
-		}
-	}
-	printf("\n");
-	return (0);
+for (i = 1; i <= 100; i++)
+{
+if (i % 3 == 0)
+{
+printf("Fizz");
 }
+else if (i % 5 == 0)
+{
+printf("Buzz");
+
+}
+else if ((i % 3 == 0) && (i % 5 == 0))
+{
+printf("FizzBuzz");
+}
+else
+{
+printf("%d", i);
+}
+if (i != 100)
+{
+printf(" ");
+}
+
+}
+printf("\n");
+return (0);
+}
+
