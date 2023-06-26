@@ -1,9 +1,9 @@
 #include "main.h"
 
 /**
- * _isupper - This checks for Uppercase char
+ * _puts - output string of char
  *
- * @c: This is a char
+ * @str: This is a char
  *
  * Return: always 0
  */
