@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * print_rev - display string of char in reverse
+ * rev_string - display string of char in reverse by swapping
  *
  * @s: This is pointer variable
  *
@@ -12,6 +12,7 @@ void rev_string(char *s)
 {
 	int i;
 	int j;
+	char placeHolder;
 
 	for (i = 0; i >= 0; i++)
 	{
@@ -21,8 +22,10 @@ void rev_string(char *s)
 		}
 	}
 
-	for (j = i - 1; j >= 0; j--)
+	for (j = 0; j < i / 2; j++)
 	{
-		*(s + j);
+		placeHolder = s[j];
+		s[j] = s[i - j - 1];
+		s[i - j - 1] = placeHolder;
 	}
 }
