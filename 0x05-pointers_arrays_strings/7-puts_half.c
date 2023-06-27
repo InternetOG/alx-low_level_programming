@@ -18,8 +18,12 @@ void puts_half(char *str)
 			break;
 		}
 	}
-	for (j = (i / 2); j < i; j++)
+	for (j = i / 2; j < i; j++)
 	{
+		if (i % 2 != 0)
+		{
+			_putchar(str[j]);
+		}
 		_putchar(str[j]);
 	}
 	_putchar('\n');
