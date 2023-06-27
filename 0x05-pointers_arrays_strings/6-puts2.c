@@ -1,9 +1,9 @@
 #include "main.h"
 
 /**
- * _isupper - This checks for Uppercase char
+ * puts2 - gives the even character from '0' - '9'
  *
- * @c: This is a char
+ * @str: This is a char
  *
  * Return: always 0
  */
