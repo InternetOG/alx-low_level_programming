@@ -11,13 +11,18 @@
 
 void print_array(int *a, int n)
 {
-	int i;
+	int j;
 
-	for (i = 0; a[i] != '\0'; i++)
+	for (j = 0; j < n; j++)
 	{
+		if (j != n - 1)
+		{
+			printf("%i, ", a[j]);
+		}
+		else
+		{
+			printf("%i", a[j]);
+		}
 	}
-	for (n = 0; n <= i - 1; n++)
-	{
-		printf("%i, ", a[n]);
-	}
+	printf("\n");
 }
