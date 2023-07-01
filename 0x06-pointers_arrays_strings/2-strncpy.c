@@ -15,7 +15,6 @@ char *_strncpy(char *dest, char *src, int n)
 	int j;
 	int l;
 	int k = 0;
-	int totalLength;
 
 	for (i = 0; dest[i] != '\0'; i++)
 	{
@@ -24,9 +23,7 @@ char *_strncpy(char *dest, char *src, int n)
 	{
 	}
 
-	totalLength = i + j;
-	
-	for (l = 0; l < totalLength; l++)
+	for (l = 0; l < i - 1; l++)
 	{
 		if (n == l)
 		{
