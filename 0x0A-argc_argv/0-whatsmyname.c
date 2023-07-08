@@ -1,6 +1,12 @@
 #include <stdio.h>
-#include <stdlib.h> 
 #include "main.h"
+
+/**
+ * main - prints a string
+ * @argc: length of arguments
+ * @argv: pointer to an array of strings/arguments
+ * Return: always 0
+ */
 
 int main(int argc, char *argv[])
 {
@@ -10,4 +16,6 @@ int main(int argc, char *argv[])
 	{
 		printf("%s\n", argv[i]);
 	}
+
+	return (0);
 }
