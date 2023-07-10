@@ -15,7 +15,7 @@ int main(int argc, char *argv[])
 
 	if (argc > 1)
 	{
-		for (i = 1; i; i++)
+		for (i = 1; i < argc; i++)
 		{
 			if (!(atoi(argv[i])) || atoi(argv[i]) < 0)
 			{
