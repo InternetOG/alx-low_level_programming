@@ -2,8 +2,9 @@
 #include <stdlib.h>
 #include "main.h"
 /**
- * _strdup - create array copy using malloc
- * @str: copy the str parameter into s pointer
+ * str_concat - concate two string together using malloc
+ * @s1: string one
+ * @s2: String two
  * Return: pointer s
  */
 char *str_concat(char *s1, char *s2)
@@ -11,10 +12,10 @@ char *str_concat(char *s1, char *s2)
 	char *s;
 	unsigned int i;
 	unsigned int j;
-	unsigned int k;
-	unsigned int l;
-	unsigned int m;
-	unsigned len;
+	int k;
+	int l;
+	int m;
+	int len;
 
 	i = 0;
 	j = 0;
