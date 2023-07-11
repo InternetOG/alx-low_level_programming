@@ -33,7 +33,7 @@ char *str_concat(char *s1, char *s2)
 		j++;
 	}
 	len = i + j;
-	s = malloc(len * sizeof(char));
+	s = malloc((len + 1) * sizeof(char));
 	for (k = 0; k < i; k++)
 	{
 		s[k] = s1[k];
