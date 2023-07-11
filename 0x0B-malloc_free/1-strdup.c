@@ -8,6 +8,11 @@
  */
 char *_strdup(char *str)
 {
+	if (str == NULL)
+	{
+		return (NULL);
+	}
+
 	char *s;
 	unsigned int i;
 	unsigned int size;
@@ -19,12 +24,10 @@ char *_strdup(char *str)
 	}
 
 	s = malloc((size + 1) * sizeof(char));
-	if (str == NULL)
+	if (s == NULL)
 	{
-		printf("failed to allocate memory\n");
 		return (NULL);
 	}
-
 	i = 0;
 
 	while (i < size)
