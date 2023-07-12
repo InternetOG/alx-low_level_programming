@@ -31,11 +31,8 @@ char *str_concat(char *s1, char *s2)
 	{
 		j++;
 	}
-	printf("%i\n", i);
-	printf("%i\n", j);
 	len = i + j;
-	printf("%i\n", len);
-	s = malloc((len + 1) * sizeof(char));
+	s = (char *)malloc((len + 1) * sizeof(char));
 	if (s == NULL)
 	{
 		return (NULL);
