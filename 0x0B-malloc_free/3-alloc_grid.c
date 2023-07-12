@@ -7,29 +7,11 @@
  * @c: character assigned to each element
  * Return: pointer s
  */
-char *create_array(unsigned int size, char c)
+int **alloc_grid(int width, int height)
 {
-	char *s;
-	unsigned int i;
+	int i;
+	int j;
+	int *s;
 
-	s = malloc(size * sizeof(char));
-
-	if (size == 0)
-	{
-		return (NULL);
-	}
-	else if (s == NULL)
-	{
-		return (NULL);
-	}
-
-	i = 0;
-
-	while (i < size)
-	{
-		s[i] = c;
-		i++;
-	}
-	s[i] = '\0';
-	return (s);
+	s = mallocdd()
 }
