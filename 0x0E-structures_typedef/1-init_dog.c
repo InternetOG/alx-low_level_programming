@@ -3,7 +3,6 @@
 #include <stdlib.h>
 /**
  * init_dog - initialiing dog
- * @dog: Sturct name
  * @d: struct variable
  * @name: string char
  * @age: int type
