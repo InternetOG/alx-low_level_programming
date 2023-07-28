@@ -1,6 +1,7 @@
 #include <stdio.h>
-#include "lists.h"
 #include <stdlib.h>
+#include "lists.h"
+
 /**
  * print_list - linked list function to print elements and size
  * @h: a pointer to a struct typedef to list_t
@@ -34,7 +35,6 @@ size_t print_list(const list_t *h)
 			}
 		}
 	}
-	printf("\n");
 	return (count);
 }
 
