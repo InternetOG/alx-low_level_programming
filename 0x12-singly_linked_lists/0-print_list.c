@@ -18,9 +18,7 @@ size_t print_list(const list_t *h)
 
 		new = h;
 
-		if (new != NULL)
-		{
-			while (new)
+			while (new != NULL)
 			{
 				if (new->str != NULL)
 				{
@@ -33,7 +31,6 @@ size_t print_list(const list_t *h)
 				new = new->next;
 				count++;
 			}
-		}
 	}
 	return (count);
 }
