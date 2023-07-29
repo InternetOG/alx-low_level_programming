@@ -10,13 +10,13 @@
 
 size_t print_list(const list_t *h)
 {
-	size_t count = 0;
+	int count = 0;
 
 	if (h != NULL)
 	{
 		const list_t *new = NULL;
-
-		new = h;
+		new = malloc(sizeof(list_t));
+			new = h;
 
 			while (new != NULL)
 			{
@@ -32,8 +32,6 @@ size_t print_list(const list_t *h)
 				count++;
 			}
 	}
-
-	printf("[%i] %s\n", new->len, new->str);
 	return (count);
 }
 
