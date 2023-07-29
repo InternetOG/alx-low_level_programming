@@ -12,13 +12,14 @@ list_t *add_node(list_t **head, const char *str)
 {
 	list_t *firstNode = NULL;
 
-	firstNode = (list_t *)malloc(sizeof(list_t));
+	firstNode = malloc(sizeof(list_t));
 
 	if (firstNode != NULL)
 	{
 		firstNode->str = strdup(str);
 		firstNode->next = (*head);
 		(*head) = firstNode;
+		printf("%i", firstNode->len);
 		return (firstNode);
 	}
 	else
