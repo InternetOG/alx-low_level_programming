@@ -10,10 +10,12 @@
 
 size_t print_listint(const listint_t *h)
 {
-	size_t count = 0;	
+	size_t count = 0;
+
 	if (h != NULL)
 	{
 		const listint_t *temp = NULL;
+
 		temp = malloc(sizeof(listint_t));
 		temp = h;
 
