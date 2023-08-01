@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include "lists.h"
 /**
- * free_listint - linked list function to print elements and size
+ * free_listint2 - linked list function to print elements and size
  * @head: a pointer to a struct typedef to list_t
  * Return: count
  */
