@@ -1,36 +1,34 @@
 #include <stdio.h>
-#include <stdlib.h>
+#include <string.h>
 #include "main.h"
-
 /**
-* binary_to_unit - convert to unit
-* @b:  a pointer to a char
-* Return: returns cnt
-*
+* binary_to_uint - function to convert binary to decimal
+* @b: argument in the function
+* Return: returns value
 */
 
 unsigned int binary_to_uint(const char *b)
 {
-	int index, cnt = 0, sumChar = 0;
+	unsigned int i, k, sum, var;
 
-	if (b != NULL)
+	if (b == NULL)
 	{
-		while (b[cnt] != '\0')
-		{
-			cnt++;
-		}
-
-		for (index = 0; index < cnt; index++)
-		{
-			if (b[index] == 48 || b[index] == 49)
-			{
-				sumChar += (_putchar(b[index] - '0') << (cnt - (index + 1)));
-			}
-			else
-			{
-				return (0);
-			}
-		}
+		return (0);
 	}
-	return (sumChar);
+	sum = 0;
+
+	for (i = 0; b[i] != '\0'; i++)
+	{
+	}
+	for (k = 0; k < i; k++)
+	{
+		if (b[k] > 49)
+		{
+			return (0);
+		}
+		var = b[k] - '0';
+		sum += var << ((i - 1) - k);
+	}
+
+	return (sum);
 }
