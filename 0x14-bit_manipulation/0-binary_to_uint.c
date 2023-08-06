@@ -24,7 +24,7 @@ unsigned int binary_to_uint(const char *b)
 		{
 			if (b[index] == 48 || b[index] == 49)
 			{
-				sumChar += (putchar(b[index] - '0') << (cnt - (index + 1)));
+				sumChar += (_putchar(b[index] - '0') << (cnt - (index + 1)));
 			}
 			else
 			{
