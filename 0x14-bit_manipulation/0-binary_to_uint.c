@@ -6,29 +6,30 @@
 * @b: argument in the function
 * Return: returns value
 */
-
 unsigned int binary_to_uint(const char *b)
 {
-	unsigned int i, k, sum, var;
+    int res= 0;
+    int i = 0;
+    int j = 0;
+    int count = 0;
 
-	if (b == NULL)
-	{
-		return (0);
-	}
-	sum = 0;
+    if (b != NULL)
+    {
+        while (b[i] != '\0')
+        {
+            count++;
+            i++;
+        }
 
-	for (i = 0; b[i] != '\0'; i++)
-	{
-	}
-	for (k = 0; k < i; k++)
-	{
-		if (b[k] > 49)
-		{
-			return (0);
-		}
-		var = b[k] - '0';
-		sum += var << ((i - 1) - k);
-	}
-
-	return (sum);
+        while (b[j] != '\0')
+        {
+            if (b[j] > 49)
+            {
+                return (0);
+            }
+            res += (b[j] - '0') << ((i - j) - 1);
+            j++;
+        }
+    }
+    return (res);
 }
