@@ -1,4 +1,4 @@
-#inlcude "lists.h"
+#include "lists.h"
 
 /**
  * add_dnodeint - adds a new node to the beginning
@@ -16,7 +16,7 @@ dlistint_t *add_dnodeint(dlistint_t **head, const int n)
 	if (newNode == NULL)
 	{
 		perror("Not enough memory");
-		return (1);
+		return (NULL);
 	}
 	newNode->n = n;
 	newNode->next = *head;
